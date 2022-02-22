@@ -1,15 +1,15 @@
 function compareArrays(arr1, arr2) {
     let result;
     if(arr1.length>arr2.length || arr1.length<arr2.length) {
-      result = "False";
+      result = false;
     } 
     else {
      for(let i = 0; i < arr1.length; i++){
         if(arr1[i]==arr2[i]){
-            result = "True";
+            result = true;
         }
         else {
-            result = "False";
+            result = false;
         }
      }
     }
