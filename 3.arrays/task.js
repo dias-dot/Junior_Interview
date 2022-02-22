@@ -18,10 +18,26 @@ function compareArrays(arr1, arr2) {
 }
 
 
-function advancedFilter(arr) {
-  let resultArr;
-
-  // Ваш код
-
-  return resultArr; // array
+function tocheck(value){
+  if(value>0 && (value%3==0)){
+    value= value * 10;
+    return value;
+  }
+  else{
+    value=0;
+    return value;
+  }
 }
+
+function tosolve(value){
+   return value>0;
+}
+
+ function advancedFilter(arr) {
+   let resultArr,sortingarr;
+   sortingarr = arr.map(tocheck);
+   resultArr = sortingarr.filter(tosolve);
+   
+ 
+   return resultArr; // array
+ }
