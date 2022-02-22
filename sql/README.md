@@ -12,6 +12,9 @@ C помощью SELECT выведите всех пассажиров, кото
 как `COMPANY_NAME`.
 
 <!-- ЗАКРЕПИТЕ ВАШ SELECT ОТ 1 ЗАДАНИЯ ЗДЕСЬ -->
+SELECT Passenger.id,Passenger.name,Trip.plane,Company.name FROM Trip,Pass_in_trip,Passenger,Company Where Trip.plane='Boeing' AND Company.name='air_France'
+
+
 
 ### Задание 2.
 
@@ -29,5 +32,5 @@ C помощью SELECT выведите количество пассажиро
 и `COUNT` (Количество пассажиров, имена которых начинаются с этой буквы).
 
 <!-- ЗАКРЕПИТЕ ВАШ SELECT ОТ 3 ЗАДАНИЯ ЗДЕСЬ -->
-
+SELECT COUNT name FROM Passenger Where Count>1    ORDER BY name DESC
 <!-- После выполнения всех заданий, необходимо сделать push в репозиторий и отправить ссылку на него -->
